@@ -5,14 +5,17 @@ import { ITEM_ID } from './config.js';
 
 /** @typedef {import('@minecraft/server').EntityInventoryComponent} Inventory */
 
-world.afterEvents.itemUseOn.subscribe(ev => {
+world.beforeEvents.itemUseOn.subscribe(async ev => {
   const { itemStack, source, block } = ev;
-  
+
   if (
     itemStack.typeId === ITEM_ID &&
     source instanceof Player &&
     getGamemode(source) === GameMode.creative
   ) {
+    ev.cancel = true;
+    await null;
+
     const stack = block.getItemStack(1, source.isSneaking);
     const { container } = /** @type {Inventory} */ (source.getComponent('minecraft:inventory'));
     container.addItem(stack);
