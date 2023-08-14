@@ -10,7 +10,6 @@ world.beforeEvents.itemUseOn.subscribe(async ev => {
 
   if (
     itemStack.typeId === ITEM_ID &&
-    source instanceof Player &&
     getGamemode(source) === GameMode.creative
   ) {
     ev.cancel = true;
