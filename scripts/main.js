@@ -10,12 +10,13 @@ world.beforeEvents.itemUseOn.subscribe(async ev => {
 
   if (
     itemStack.typeId === ITEM_ID &&
-    getGamemode(source) === GameMode.creative
+    getGameMode(source) === GameMode.creative
   ) {
     ev.cancel = true;
     await null;
 
     const stack = block.getItemStack(1, source.isSneaking);
+    if (!stack) return;
     const { container } = /** @type {Inventory} */ (source.getComponent('minecraft:inventory'));
     container.addItem(stack);
   }
