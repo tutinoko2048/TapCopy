@@ -22,13 +22,12 @@ world.beforeEvents.itemUseOn.subscribe(async ev => {
 });
 
 /**
- * @param {Player} player
- * @returns {GameMode|undefined}
+ * @author tutinoko2048
+ * @param { import('@minecraft/server').Player } target
+ * @returns { import('@minecraft/server').GameMode }
  */
-function getGamemode(player) {
-  for (const gamemodeName in GameMode) {
-    if (world.getPlayers({ name: player.name, gameMode: GameMode[gamemodeName] }).length > 0) {
-      return GameMode[gamemodeName];
-    }
+function getGameMode(target) {
+  for (const key in GameMode) {
+    if (target.matches({ gameMode: GameMode[key] })) return GameMode[key];
   }
 }
