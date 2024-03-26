@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "header": {
-    "name": "TapCopy_v1.6.0",
+    "name": "TapCopy_v1.7.0",
     "description": "コンパスを持ってブロックをタップでコピーできます\nv1.20.7xに対応してます",
     "uuid": "1a66ee1f-4daa-4d29-bb14-fabff1e35280",
     "version": [ 1, 7, 0 ],
