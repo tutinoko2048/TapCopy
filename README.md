@@ -1,6 +1,6 @@
 # TapCopy
 コンパスを持ってブロックをタップでコピーできます  
-v1.20.6xに対応してます  
+v1.20.7xに対応してます  
   
 https://youtu.be/mfiqCEat7bQ
   

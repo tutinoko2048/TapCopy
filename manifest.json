@@ -2,10 +2,10 @@
   "format_version": 2,
   "header": {
     "name": "TapCopy_v1.6.0",
-    "description": "コンパスを持ってブロックをタップでコピーできます\nv1.20.6xに対応してます",
+    "description": "コンパスを持ってブロックをタップでコピーできます\nv1.20.7xに対応してます",
     "uuid": "1a66ee1f-4daa-4d29-bb14-fabff1e35280",
-    "version": [ 1, 6, 0 ],
-    "min_engine_version": [ 1, 20, 60 ]
+    "version": [ 1, 7, 0 ],
+    "min_engine_version": [ 1, 20, 70 ]
   },
   "modules": [
     {
@@ -18,15 +18,15 @@
       "version": [ 1, 0, 0 ],
       "type": "script",
       "language": "javascript",
-      "entry": "scripts/main.js", // 読み込むファイルへのパス
+      "entry": "scripts/main.js",
       "uuid": "f7f2aa92-aebb-47fb-8a29-a56c089aafaa",
       "description": "script module"
     }
   ],
-  "dependencies": [ // 使うモジュールを指定する
+  "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "1.9.0-beta" // バージョンによって変わることがあるので注意
+      "version": "1.10.0-beta"
     }
   ]
 }
