@@ -1,10 +1,10 @@
 {
   "format_version": 2,
   "header": {
-    "name": "TapCopy_v1.9.0",
+    "name": "TapCopy_v1.9.1",
     "description": "コンパスを持ってブロックをタップすると手元にコピーできます",
     "uuid": "1a66ee1f-4daa-4d29-bb14-fabff1e35280",
-    "version": [ 1, 9, 0 ],
+    "version": [ 1, 9, 1 ],
     "min_engine_version": [ 1, 21, 120 ]
   },
   "modules": [
