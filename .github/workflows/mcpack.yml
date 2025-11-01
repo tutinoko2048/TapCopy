@@ -24,7 +24,7 @@ jobs:
         id: get-name
         run: |
           NAME=$(jq -r '.header.name' manifest.json)
-          echo "fileName=${NAME}.zip" >> $GITHUB_OUTPUT
+          echo "fileName=${NAME}.mcpack" >> $GITHUB_OUTPUT
 
       - name: Make Archive
         run: |
